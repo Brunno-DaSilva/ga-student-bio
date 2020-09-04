@@ -3,7 +3,7 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGlobe, faPlusCircle } from "@fortawesome/free-solid-svg-icons";
 import {
-  faGithub,
+  faGithubAlt,
   faLinkedinIn,
   faTwitter,
   faInstagram,
@@ -35,6 +35,7 @@ const Cards = ({
             <p>Title: </p>
             <p>{title}</p>
           </div>
+          <br />
         </div>
         <div className="cards__top--right">
           <FontAwesomeIcon className="icon-plus" icon={faPlusCircle} />
@@ -45,7 +46,8 @@ const Cards = ({
       </div>
       <div className="cards__bottom">
         <div className="cards__bottom--top">
-          <h2>About ...</h2>
+          <h2>About</h2>
+          <br />
           <div>
             <p>
               Darth Maul was a Dathomirian Zabrak Sith Lord. In The Phantom
@@ -55,15 +57,23 @@ const Cards = ({
           </div>
         </div>
         <div className="cards__bottom--bottom">
-          <div className="icons">
-            <FontAwesomeIcon className="info-icons active" icon={faGithub} />
-            <FontAwesomeIcon className="info-icons social" icon={faTwitter} />
-            <FontAwesomeIcon
-              className="info-icons social"
-              icon={faLinkedinIn}
-            />
-            <FontAwesomeIcon className="info-icons social" icon={faGlobe} />
-            <FontAwesomeIcon className="info-icons social" icon={faInstagram} />
+          <div className="icons-container">
+            <div className="icons-bg">
+              <FontAwesomeIcon className="icons-social" icon={faGithubAlt} />
+            </div>
+            <div className="icons-bg">
+              <FontAwesomeIcon className="icons-social" icon={faTwitter} />
+            </div>
+
+            <div className="icons-bg">
+              <FontAwesomeIcon className="icons-social" icon={faLinkedinIn} />
+            </div>
+            <div className="icons-bg">
+              <FontAwesomeIcon className="icons-social" icon={faGlobe} />
+            </div>
+            <div className="icons-bg">
+              <FontAwesomeIcon className="icons-social" icon={faInstagram} />
+            </div>
           </div>
         </div>
       </div>

@@ -1,4 +1,5 @@
 $top-blue-bg: #1767d1;
+$top-pink-bg: #c85ba2;
 $bottom-beige-bg: #fff8de;
 $font-gray: #7d7c7c;
 $font-white: #ffffff;
@@ -23,13 +24,14 @@ $font-white: #ffffff;
     position: relative;
     padding: 0.5rem;
     margin-bottom: -1rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 
     .cards__top--left {
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
       align-items: center;
-      width: 80%;
+      width: 83%;
       margin: 2rem 0;
 
       .name {
@@ -38,9 +40,11 @@ $font-white: #ffffff;
       .name,
       .title {
         color: $font-white;
-        font-size: 1.5rem;
+        font-size: 1rem;
+        font-weight: bold;
         width: 100%;
         line-height: 2rem;
+        letter-spacing: 1px;
       }
 
       .name :nth-child(1),
@@ -58,7 +62,7 @@ $font-white: #ffffff;
       flex-direction: column;
       justify-content: flex-end;
       align-items: flex-end;
-      width: 20%;
+      width: 17%;
       margin: 2rem 0;
       margin-right: 1rem;
 
@@ -71,11 +75,11 @@ $font-white: #ffffff;
 
     .image {
       position: absolute;
-      left: 68%;
-      top: 70%;
+      left: 60%;
+      top: 60%;
       z-index: 999;
       img {
-        width: 100px;
+        width: 120px;
         height: auto;
         object-fit: cover;
         border-radius: 50%;
@@ -94,11 +98,54 @@ $font-white: #ffffff;
     border-top-right-radius: 1.5rem;
     border-top-left-radius: 1.5rem;
     position: relative;
-    padding: 0.5rem;
+    padding: 2rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 
     .cards__bottom--top {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin: 1rem 0;
+      h2,
+      p {
+        color: $font-gray;
+        line-height: 1.5rem;
+        letter-spacing: 1px;
+      }
     }
     .cards__bottom--bottom {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      padding: 0.5rem;
+      margin-top: 1rem;
+
+      .icons-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+
+        .icons-bg {
+          padding: 0.4rem 0.6rem;
+          border-radius: 50%;
+          background-color: #ffffffad;
+
+          .icons-social {
+            font-size: 1.5rem;
+            color: $font-gray;
+            opacity: 0.7;
+            transition: ease-in-out 0.5s;
+            &:hover {
+              cursor: pointer;
+              color: $font-gray;
+              opacity: 1;
+            }
+          }
+        }
+      }
     }
   }
 }
