@@ -10,8 +10,13 @@ $font-white: #ffffff;
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-  width: 32%;
-  padding: 0.5rem;
+  width: 30%;
+  margin: 1rem;
+  border-top-right-radius: 1.5rem;
+  border-top-left-radius: 1.5rem;
+  border-bottom-right-radius: 1.5rem;
+  border-bottom-left-radius: 1.5rem;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 
   .cards__top {
     display: flex;
