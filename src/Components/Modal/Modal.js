@@ -33,7 +33,7 @@ const Modal = ({
         </div>
         <div className="modal__right-col">
           <div className="right-col__name">
-            <p>{name}</p>
+            <h2>{name}</h2>
           </div>
           <div className="right-col__lo-ti">
             <div className="right-col__title">
