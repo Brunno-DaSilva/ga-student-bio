@@ -86,6 +86,7 @@ const Cards = ({ name, title, imgUrl, ...otherSectionProps }) => {
           title={title}
           imgUrl={imgUrl}
           {...otherSectionProps}
+          modalIsOpenHandler={modalIsOpenHandler}
         />
       ) : (
         ""
