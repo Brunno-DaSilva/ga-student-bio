@@ -3,9 +3,15 @@ import { Link } from "react-router-dom";
 
 import "./side-drawer.scss";
 
-const SideDrawer = () => {
+const SideDrawer = (props) => {
+  let drawerClasses = "side-drawer";
+
+  if (props.show) {
+    drawerClasses = "side-drawer open";
+  }
+
   return (
-    <nav className="side-drawer__navigation">
+    <nav className={drawerClasses}>
       <div className="side-drawer__nav-items">
         <div className="toolbar__logo">
           <Link to="/">

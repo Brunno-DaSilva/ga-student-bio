@@ -1,7 +1,7 @@
 $font-gray: #7d7c7c;
 $bottom-beige-bg: #f0f0f0;
 
-.side-drawer__navigation {
+.side-drawer {
   height: 100%;
   width: 70%;
   max-width: 300px;
@@ -11,6 +11,8 @@ $bottom-beige-bg: #f0f0f0;
   top: 0;
   left: 0;
   z-index: 805;
+  transform: translateX(-100%);
+  transition: ease-in-out 0.5s;
 
   .side-drawer__nav-items {
     margin: 1rem;
@@ -38,6 +40,9 @@ $bottom-beige-bg: #f0f0f0;
   }
 }
 
+.open {
+  transform: translateX(0);
+}
 //Button style
 .toggle-button {
   display: flex;

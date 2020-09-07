@@ -29,17 +29,15 @@ class App extends Component {
   render() {
     const { studentData } = this.state;
     let backdrop;
-    let sideDrawer;
 
     if (this.state.sideDrawerOpen) {
-      backdrop = <Backdrop click={this.backdropClickHandler} />;
-      sideDrawer = <SideDrawer />;
+      backdrop = <Backdrop backdropClickHandler={this.backdropClickHandler} />;
     }
 
     return (
       <>
         <Toolbar drawerToggleClickHandler={this.drawerToggleClickHandler} />
-        {sideDrawer}
+        <SideDrawer show={this.state.sideDrawerOpen} />
         {backdrop}
 
         <div className="App">

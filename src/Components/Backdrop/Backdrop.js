@@ -7,7 +7,7 @@ const Backdrop = (props) => {
     <div
       aria-label="Close Main Menu Button"
       className="backdrop"
-      onClick={props.backdropClick}
+      onClick={props.backdropClickHandler}
     />
   );
 };

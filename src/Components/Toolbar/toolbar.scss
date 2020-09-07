@@ -21,8 +21,12 @@ $bottom-beige-bg: #f0f0f0;
     height: 100%;
     margin: 0 1rem;
 
+    .toolbar__button {
+      display: none;
+    }
     img {
       width: 30px;
+      margin-left: 1rem;
     }
 
     .toolbar__logo {
@@ -41,5 +45,22 @@ $bottom-beige-bg: #f0f0f0;
   }
   .spacer {
     flex: 1;
+  }
+}
+
+@media (max-width: 950px) {
+  .toolbar {
+    .toolbar__navigation {
+      .toolbar__logo {
+        position: absolute;
+        left: 50%;
+      }
+      .toolbar__button {
+        display: block;
+      }
+      .toolbar__nav-items {
+        display: none;
+      }
+    }
   }
 }
