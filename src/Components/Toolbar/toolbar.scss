@@ -1,0 +1,45 @@
+$bottom-beige-bg: #f0f0f0;
+
+.toolbar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background: $bottom-beige-bg;
+  height: 60px;
+  z-index: 150;
+  padding: 0.5rem;
+
+  a {
+    color: tomato;
+    text-decoration: none;
+  }
+  .toolbar__navigation {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+    margin: 0 1rem;
+
+    img {
+      width: 30px;
+    }
+
+    .toolbar__logo {
+      a {
+        color: lightseagreen;
+      }
+    }
+    .toolbar__nav-items {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      a {
+        padding: 0.5rem;
+      }
+    }
+  }
+  .spacer {
+    flex: 1;
+  }
+}

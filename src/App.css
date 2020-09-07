@@ -4,6 +4,8 @@
   justify-content: space-around;
   align-items: center;
   width: 100%;
+  height: 100%;
+  margin-top: 65px;
 }
 
 .students-data {
@@ -11,7 +13,6 @@
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-  width: 80%;
+  width: 85%;
   padding: 0.5rem;
-  border: 1px solid gold;
 }

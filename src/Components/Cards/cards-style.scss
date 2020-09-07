@@ -1,6 +1,6 @@
 $top-blue-bg: #1767d1;
 $top-pink-bg: #c85ba2;
-$bottom-beige-bg: #f0f0f0;
+$bottom-light-bg: #f0f0f0;
 $font-gray: #7d7c7c;
 $font-white: #ffffff;
 
@@ -81,7 +81,7 @@ $font-white: #ffffff;
       position: absolute;
       left: 60%;
       top: 60%;
-      z-index: 999;
+      z-index: 99;
       img {
         width: 120px;
         height: auto;
@@ -97,7 +97,7 @@ $font-white: #ffffff;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    background: $bottom-beige-bg;
+    background: $bottom-light-bg;
     width: 100%;
     border-bottom-right-radius: 1.5rem;
     border-bottom-left-radius: 1.5rem;
