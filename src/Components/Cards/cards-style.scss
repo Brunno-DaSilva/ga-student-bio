@@ -70,10 +70,24 @@ $font-white: #ffffff;
       margin: 2rem 0;
       margin-right: 1rem;
 
-      .icon-plus {
-        color: $font-white;
-        font-size: 2rem;
-        opacity: 0.9;
+      .icon-plus-btn {
+        padding: 0.2rem 0.3rem;
+        border-radius: 50%;
+        border: none;
+        background-color: #ffffff56;
+        transition: ease-in-out 0.25s;
+
+        .icon-plus {
+          color: $font-white;
+          font-size: 2rem;
+          opacity: 0.9;
+          transition: ease-in-out 0.25s;
+
+          &:hover {
+            cursor: pointer;
+            color: #e7e7e7;
+          }
+        }
       }
     }
 

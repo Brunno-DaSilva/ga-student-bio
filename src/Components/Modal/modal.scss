@@ -1,4 +1,100 @@
+$top-blue-bg: #1767d1;
+$top-pink-bg: #c85ba2;
+$bottom-light-bg: #f0f0f0;
+$font-gray: #7d7c7c;
+$font-white: #ffffff;
+
 .modal {
-  background: #333;
-  color: #7cf07c;
+  position: absolute;
+  width: 70%;
+  top: 20%;
+  left: 20%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background: $bottom-light-bg;
+  color: $font-gray;
+  padding: 0.5rem;
+  z-index: 999;
+  border-radius: 0.5rem;
+
+  .modal__left-col {
+    margin: 1rem 2rem;
+    img {
+      width: 400px;
+      border-radius: 0.5rem;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    }
+  }
+  .modal__right-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 2rem;
+
+    .right-col__name {
+      margin: 1rem 0;
+      letter-spacing: 1px;
+
+      p {
+        font-size: 2rem;
+
+        padding: 0.5rem;
+        color: $font-gray;
+
+        border-left: 5px solid #1767d1;
+      }
+    }
+
+    .right-col__lo-ti {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      width: 99%;
+      margin: 1rem 0;
+
+      .right-col__title,
+      .right-col__location {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        font-size: 0.9rem;
+        font-weight: bold;
+
+        p {
+          font-size: 0.9rem;
+          margin-left: 0.5rem;
+
+          span {
+            text-transform: none;
+          }
+        }
+        span {
+          color: $font-gray;
+          font-weight: normal;
+        }
+      }
+    }
+
+    .right-col__about {
+      display: flex;
+      flex-direction: column;
+      background-color: rgb(238, 235, 235);
+      padding: 0.8rem;
+      margin-bottom: 1rem;
+      border-radius: 0.5rem;
+
+      h3 {
+        margin: 1rem 0;
+        padding-left: 0.5rem;
+        border-left: 5px solid $top-blue-bg;
+      }
+      p {
+        line-height: 1.5rem;
+      }
+    }
+    .right-col__icons {
+    }
+  }
 }
