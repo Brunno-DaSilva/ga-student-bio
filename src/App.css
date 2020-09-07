@@ -8,11 +8,17 @@
   margin-top: 65px;
 }
 
+h1 {
+  margin: 0.5em;
+  font-size: 2rem;
+  color: #7d7c7c;
+  text-transform: uppercase;
+}
 .students-data {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-  width: 85%;
+  width: 70%;
   padding: 0.5rem;
 }
