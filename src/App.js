@@ -5,6 +5,7 @@ import Cards from "./Components/Cards/Cards";
 import Toolbar from "./Components/Toolbar/Toolbar";
 import SideDrawer from "./Components/SideDrawer/SideDrawer";
 import Backdrop from "./Components/Backdrop/Backdrop";
+import Footer from "./Components/Footer/Footer";
 
 import STUDENT_INFO from "./StudentData";
 
@@ -41,13 +42,14 @@ class App extends Component {
         {backdrop}
 
         <div className="App">
-          <h1>Students Bios</h1>
+          <h1>Student Bio</h1>
           <div className="students-data">
             {studentData.map(({ id, ...otherSectionProps }) => {
               return <Cards key={id} {...otherSectionProps} />;
             })}
           </div>
         </div>
+        <Footer />
       </>
     );
   }

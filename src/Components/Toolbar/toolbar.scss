@@ -1,19 +1,47 @@
 $bottom-beige-bg: #f0f0f0;
+$font-gray: #7d7c7c;
 
 .toolbar {
   position: fixed;
   left: 0;
   top: 0;
   width: 100%;
-  background: $bottom-beige-bg;
-  height: 60px;
+  background: #ffffff;
+  height: 70px;
   z-index: 150;
   padding: 0.5rem;
 
   a {
-    color: tomato;
+    color: $bottom-beige-bg;
+    font-weight: bold;
     text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    position: relative;
+    z-index: 150;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    &:after {
+      background: none repeat scroll 0 0 transparent;
+      bottom: 0;
+      content: "";
+      display: block;
+      height: 2px;
+      left: 50%;
+      position: absolute;
+      background: $font-gray;
+      transition: width 0.3s ease 0s, left 0.3s ease 0s;
+      width: 0;
+    }
+    &:hover:after {
+      width: 100%;
+      left: 0;
+    }
   }
+
   .toolbar__navigation {
     display: flex;
     justify-content: flex-start;
@@ -25,8 +53,9 @@ $bottom-beige-bg: #f0f0f0;
       display: none;
     }
     img {
-      width: 30px;
+      width: 45px;
       margin-left: 1rem;
+      padding: 0.3rem;
     }
 
     .toolbar__logo {
@@ -45,6 +74,7 @@ $bottom-beige-bg: #f0f0f0;
   }
   .spacer {
     flex: 1;
+    height: 100%;
   }
 }
 
@@ -63,4 +93,12 @@ $bottom-beige-bg: #f0f0f0;
       }
     }
   }
+}
+
+.App__top-right {
+  position: absolute;
+  width: 27%;
+  top: 0;
+  left: 73%;
+  position: fixed;
 }
