@@ -2,23 +2,24 @@ $bottom-beige-bg: #f0f0f0;
 $font-gray: #7d7c7c;
 
 .toolbar {
-  position: fixed;
   left: 0;
   top: 0;
   width: 100%;
-  background: #ffffff;
+  background: transparent;
   height: 70px;
   z-index: 150;
-  padding: 0.5rem;
+  padding: 0.2rem;
 
   a {
     color: $bottom-beige-bg;
+    font-size: 0.9rem;
     font-weight: bold;
     text-decoration: none;
     text-transform: uppercase;
-    letter-spacing: 1px;
     position: relative;
     z-index: 150;
+    letter-spacing: 1px;
+    padding: 0.4rem !important;
 
     &:hover {
       cursor: pointer;
@@ -97,8 +98,8 @@ $font-gray: #7d7c7c;
 
 .App__top-right {
   position: absolute;
-  width: 27%;
+  width: 25%;
   top: 0;
-  left: 73%;
+  left: 78%;
   position: fixed;
 }
