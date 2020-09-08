@@ -38,9 +38,11 @@ $bruno-color: #048bda;
       .bruno {
         color: $bruno-color;
         font-size: 1.2rem;
+        line-height: 1.5rem;
         span {
           color: $main-active-bg;
           font-size: 1rem;
+          line-height: 1.5rem;
         }
       }
       .more-projects {
@@ -49,9 +51,13 @@ $bruno-color: #048bda;
         justify-content: center;
         align-items: center;
         margin-bottom: 1rem;
+        p {
+          line-height: 1.5rem;
+        }
 
         span {
           color: $main-active-bg;
+          line-height: 1.5rem;
         }
         a {
           color: $main-active-bg;
@@ -76,7 +82,7 @@ $bruno-color: #048bda;
 
         font-size: 0.9rem;
         letter-spacing: 1px;
-        border-top: 1px solid #6e6e6e;
+        border-top: 1px solid #6e6e6e44;
         .tomato {
           color: tomato;
         }
