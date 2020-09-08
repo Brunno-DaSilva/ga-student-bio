@@ -1,8 +1,5 @@
-$top-blue-bg: #1767d1;
-$top-pink-bg: #c85ba2;
-$bottom-light-bg: #f0f0f0;
-$font-gray: #7d7c7c;
-$font-white: #ffffff;
+@import "../../css/animation.scss";
+@import "../../css/fonts-color.scss";
 
 .modal-container {
   background: $bottom-light-bg;
