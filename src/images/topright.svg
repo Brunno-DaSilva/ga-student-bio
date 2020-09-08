@@ -1,1 +1,15 @@
-<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 309.13 289"><defs><style>.cls-1{fill:url(#linear-gradient);}</style><linearGradient id="linear-gradient" y1="144.5" x2="309.13" y2="144.5" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#80d0c7"/><stop offset="1" stop-color="#0093e9"/></linearGradient></defs><path id="topwave" class="cls-1" d="M.12,0s-10,151,151,151,158,138,158,138V0Z"/></svg>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+    viewBox="0 0 309.13 289">
+    <defs>
+        <style>
+            .cls-1 {
+                fill: url(#linear-gradient);
+            }
+        </style>
+        <linearGradient id="linear-gradient" y1="144.5" x2="309.13" y2="144.5" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#80d0c7" />
+            <stop offset="1" stop-color="#0093e9" />
+        </linearGradient>
+    </defs>
+    <path id="topwave" class="cls-1" d="M.12,0s-10,151,151,151,158,138,158,138V0Z" />
+</svg>

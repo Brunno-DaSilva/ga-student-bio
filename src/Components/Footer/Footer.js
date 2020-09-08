@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGlobeAmericas, faHeart } from "@fortawesome/free-solid-svg-icons";
-import { ReactComponent as BottomLeft } from "../../images/bottomleft.svg";
+import { ReactComponent as BottomWave } from "../../images/wave-gray.svg";
 
 import {
   faFacebook,
@@ -22,7 +22,7 @@ const Footer = () => {
 
   return (
     <>
-      <BottomLeft className="bottom-left" />
+      <BottomWave className="bottom-left" />
       <div className="footer">
         <div className="footer-info">
           <div className="bottom-section">
