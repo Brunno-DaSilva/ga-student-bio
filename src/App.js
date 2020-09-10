@@ -29,6 +29,7 @@ class App extends Component {
 
   render() {
     const { studentData } = this.state;
+
     let backdrop;
 
     if (this.state.sideDrawerOpen) {
