@@ -5,13 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGlobeAmericas, faHeart } from "@fortawesome/free-solid-svg-icons";
 import { ReactComponent as BottomWave } from "../../images/wave-gray.svg";
 
-import {
-  faFacebook,
-  faPinterest,
-  faTwitter,
-  faLinkedin,
-  faGithub,
-} from "@fortawesome/free-brands-svg-icons";
+import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 
 import "./footer.scss";
 
@@ -22,7 +16,7 @@ const Footer = () => {
 
   return (
     <>
-      <BottomWave className="bottom-left" />
+      <BottomWave className="footer--wave-svg" />
       <div className="footer">
         <div className="footer-info">
           <div className="bottom-section">

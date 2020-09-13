@@ -41,23 +41,25 @@ class App extends Component {
     }
 
     return (
-      <div className="app-container">
-        <Toolbar drawerToggleClickHandler={this.drawerToggleClickHandler} />
-        <SideDrawer show={this.state.sideDrawerOpen} />
-        {backdrop}
+      <>
+        <div className="app-container">
+          <Toolbar drawerToggleClickHandler={this.drawerToggleClickHandler} />
+          <SideDrawer show={this.state.sideDrawerOpen} />
+          {backdrop}
 
-        <Switch>
-          <Route exact path="/" />
-          <Route exact path="/map" component={Map} />
-          <Route
-            exact
-            path="/students"
-            render={() => <Students studentData={studentData} />}
-          />
-          <Route exact path="/about" component={About} />
-        </Switch>
+          <Switch>
+            <Route exact path="/" />
+            <Route exact path="/map" component={Map} />
+            <Route
+              exact
+              path="/students"
+              render={() => <Students studentData={studentData} />}
+            />
+            <Route exact path="/about" component={About} />
+          </Switch>
+        </div>
         <Footer />
-      </div>
+      </>
     );
   }
 }

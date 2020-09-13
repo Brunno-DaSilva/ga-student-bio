@@ -4,9 +4,14 @@ $border-color: #e5e5e5;
 $main-active-bg: #636363;
 $bruno-color: #048bda;
 
+.footer--wave-svg {
+  min-width: 100vw;
+  padding: 0;
+  padding-right: -2rem;
+}
 .footer {
   margin-top: -0.3rem;
-  max-width: 100%;
+  min-width: 100vw !important;
   background-color: $sub-color;
   color: $main-color;
   display: flex;
@@ -15,6 +20,7 @@ $bruno-color: #048bda;
   align-items: flex-start;
   box-sizing: border-box;
   overflow: hidden;
+  overflow-x: hidden;
 
   .footer-info {
     display: flex;
