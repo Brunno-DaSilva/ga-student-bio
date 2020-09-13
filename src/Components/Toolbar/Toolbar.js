@@ -24,9 +24,15 @@ const Toolbar = (props) => {
             <div className="App__top-right">
               <TopRight className="animated delay-1 fadeInRight" />
             </div>
-            <Link className="animated delay-1shalf fadeInUp">Map</Link>
-            <Link className="animated delay-2s fadeInUp">Students</Link>
-            <Link className="animated delay-2shalf fadeInUp">About</Link>
+            <Link className="animated delay-1shalf fadeInUp" to="/map">
+              Map
+            </Link>
+            <Link className="animated delay-2s fadeInUp" to="/students">
+              Students
+            </Link>
+            <Link className="animated delay-2shalf fadeInUp" to="/about">
+              About
+            </Link>
           </div>
         </nav>
       </header>

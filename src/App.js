@@ -1,6 +1,10 @@
 import React, { Component } from "react";
 import { Switch, Route, Redirect } from "react-router-dom";
 
+import Map from "./Components/Map/Map";
+import Students from "./Components/Students/Students";
+import About from "./Components/About/About";
+
 import Cards from "./Components/Cards/Cards";
 import Toolbar from "./Components/Toolbar/Toolbar";
 import SideDrawer from "./Components/SideDrawer/SideDrawer";
@@ -37,21 +41,23 @@ class App extends Component {
     }
 
     return (
-      <>
+      <div className="app-container">
         <Toolbar drawerToggleClickHandler={this.drawerToggleClickHandler} />
         <SideDrawer show={this.state.sideDrawerOpen} />
         {backdrop}
 
-        <div className="App">
-          <h1>Student Bio</h1>
-          <div className="students-data">
-            {studentData.map(({ id, ...otherSectionProps }) => {
-              return <Cards key={id} {...otherSectionProps} />;
-            })}
-          </div>
-        </div>
+        <Switch>
+          <Route exact path="/" />
+          <Route exact path="/map" component={Map} />
+          <Route
+            exact
+            path="/students"
+            render={() => <Students studentData={studentData} />}
+          />
+          <Route exact path="/about" component={About} />
+        </Switch>
         <Footer />
-      </>
+      </div>
     );
   }
 }

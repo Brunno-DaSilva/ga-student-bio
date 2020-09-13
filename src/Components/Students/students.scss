@@ -1,0 +1,33 @@
+@import "../../css/animation.scss";
+@import "../../css/fonts-color.scss";
+
+.students {
+  margin-top: 2rem;
+  .students__title {
+    width: 40rem;
+    padding: 1rem;
+    margin: 1rem;
+    margin-left: 0;
+    border-top-right-radius: 1.5rem;
+    border-bottom-right-radius: 1.5rem;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+
+    h1 {
+      margin: 0.5em;
+      font-size: 4rem;
+      color: #9b9b9b;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+  }
+  .students-data {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 70%;
+    margin: auto;
+    padding: 0.5rem;
+    margin-top: 3rem;
+  }
+}
