@@ -1,9 +1,13 @@
 import React from "react";
 
+import "./map.scss";
+
 const Map = () => {
   return (
-    <div>
-      <h1>Map component</h1>
+    <div className="map">
+      <div className="map__title">
+        <h1>Map </h1>
+      </div>
     </div>
   );
 };
