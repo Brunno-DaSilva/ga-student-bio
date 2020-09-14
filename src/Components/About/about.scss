@@ -7,6 +7,7 @@
   align-items: flex-start;
   width: 100%;
   min-height: 80vh;
+  margin-top: 3rem;
 
   .about__title {
     background-color: #dbdbdb;
@@ -23,7 +24,7 @@
       font-size: 4rem;
       color: #9b9b9b;
       text-transform: uppercase;
-      letter-spacing: 1px;
+      letter-spacing: 5px;
     }
   }
 }
