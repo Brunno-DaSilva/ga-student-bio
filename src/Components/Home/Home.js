@@ -1,5 +1,6 @@
 import React from "react";
-import { ReactComponent as HomeSVG } from "../../Components/assets/Java_Monochromatic.svg";
+
+import Button from "../Button/Button";
 
 import "./home.scss";
 
@@ -15,6 +16,7 @@ const Home = () => {
               So students can practice contributing to open source- add your
               BIOS: About information, picture, and social media links.
             </p>
+            <Button />
           </div>
         </div>
         <div className="title__right">

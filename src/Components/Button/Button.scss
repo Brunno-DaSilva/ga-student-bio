@@ -1,0 +1,22 @@
+@import "../../css/animation.scss";
+@import "../../css/fonts-color.scss";
+
+.button {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  button {
+    background-color: #67c4b9;
+    color: white;
+    padding: 1rem 3.5rem;
+    border: none;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    transition: ease-in-out 0.5s;
+    &:hover {
+      cursor: pointer;
+      color: #636363;
+    }
+  }
+}
