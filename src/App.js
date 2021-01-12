@@ -4,6 +4,7 @@ import { Switch, Route, Redirect } from "react-router-dom";
 import Map from "./Components/Map/Map";
 import Students from "./Components/Students/Students";
 import About from "./Components/About/About";
+import Home from "./Components/Home/Home";
 
 import Cards from "./Components/Cards/Cards";
 import Toolbar from "./Components/Toolbar/Toolbar";
@@ -48,7 +49,7 @@ class App extends Component {
           {backdrop}
 
           <Switch>
-            <Route exact path="/" />
+            <Route exact path="/" component={Home} />
             <Route exact path="/map" component={Map} />
             <Route
               exact
