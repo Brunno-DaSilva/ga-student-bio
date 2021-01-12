@@ -16,7 +16,9 @@ const Home = () => {
               So students can practice contributing to open source- add your
               BIOS: About information, picture, and social media links.
             </p>
-            <Button />
+            <div>
+              <Button />
+            </div>
           </div>
         </div>
         <div className="title__right">
