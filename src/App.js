@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Switch, Route, Redirect } from "react-router-dom";
 
-import Map from "./Components/Map/Map";
+import MapHolder from "./Components/Map/MapHolder";
 import Students from "./Components/Students/Students";
 import About from "./Components/About/About";
 import Home from "./Components/Home/Home";
