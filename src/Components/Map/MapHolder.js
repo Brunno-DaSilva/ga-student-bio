@@ -18,6 +18,7 @@ const MapHolder = () => {
       <div className="mapHolder">
         <ReactMapGL
           {...viewport}
+          mapBoxApiAccessToken={process.env.REACT_APP_MAPBOX_TOKEN}
           onViewportChange={(nextViewport) => setViewport(nextViewport)}
         />
       </div>
