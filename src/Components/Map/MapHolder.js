@@ -1,30 +1,25 @@
-import React from "react";
-import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
-
+import React, { useState } from "react";
 import "./mapHolder.scss";
+import ReactMapGL from "react-map-gl";
 
 const MapHolder = () => {
+  const [viewport, setViewport] = useState({
+    width: 400,
+    height: 400,
+    latitude: 37.7577,
+    longitude: -122.4376,
+    zoom: 8,
+  });
   return (
     <div className="map">
       <div className="map__title">
         <h1>Map </h1>
       </div>
-      <div className="map-holder">
-        <MapContainer
-          center={[51.505, -0.09]}
-          zoom={13}
-          scrollWheelZoom={false}
-        >
-          <TileLayer
-            attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
-            url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-          />
-          <Marker position={[51.505, -0.09]}>
-            <Popup>
-              A pretty CSS3 popup. <br /> Easily customizable.
-            </Popup>
-          </Marker>
-        </MapContainer>
+      <div className="mapHolder">
+        <ReactMapGL
+          {...viewport}
+          onViewportChange={(nextViewport) => setViewport(nextViewport)}
+        />
       </div>
     </div>
   );

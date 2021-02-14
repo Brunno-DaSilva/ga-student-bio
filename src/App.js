@@ -6,7 +6,6 @@ import Students from "./Components/Students/Students";
 import About from "./Components/About/About";
 import Home from "./Components/Home/Home";
 
-import Cards from "./Components/Cards/Cards";
 import Toolbar from "./Components/Toolbar/Toolbar";
 import SideDrawer from "./Components/SideDrawer/SideDrawer";
 import Backdrop from "./Components/Backdrop/Backdrop";
@@ -50,7 +49,7 @@ class App extends Component {
 
           <Switch>
             <Route exact path="/" component={Home} />
-            <Route exact path="/map" component={Map} />
+            <Route exact path="/map" component={MapHolder} />
             <Route
               exact
               path="/students"

@@ -5,10 +5,12 @@
   width: 100%;
   min-height: 80vh;
   margin-top: 3rem;
+  padding: 0.5rem;
 
-  .map-holder {
-    width: 600px;
-    height: 600px;
+  .mapHolder {
+    width: 100vw;
+    height: 40vh;
+    border: 1px solid #bada55;
   }
 
   .map__title {
