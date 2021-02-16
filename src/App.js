@@ -49,7 +49,11 @@ class App extends Component {
 
           <Switch>
             <Route exact path="/" component={Home} />
-            <Route exact path="/map" component={MapHolder} />
+            <Route
+              exact
+              path="/map"
+              render={() => <MapHolder studentData={studentData} />}
+            />
             <Route
               exact
               path="/students"
