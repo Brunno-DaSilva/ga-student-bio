@@ -1,15 +1,15 @@
 import React, { useState } from "react";
 import "./mapHolder.scss";
 import ReactMapGL, { Marker } from "react-map-gl";
-import { ReactComponent as MapMarkerSVG } from "../../images/marker.svg";
+import { ReactComponent as MapMarkerSVG } from "./marker.svg";
 
 const MapHolder = ({ studentData }) => {
   const [viewport, setViewport] = useState({
     width: "95%",
     height: "100%",
-    latitude: 0.0,
-    longitude: 0.0,
-    zoom: 1.5,
+    latitude: 31.9686,
+    longitude: -99.90181,
+    zoom: 5.5,
   });
 
   return (
