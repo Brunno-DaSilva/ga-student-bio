@@ -9,7 +9,7 @@ const MapHolder = ({ studentData }) => {
     height: "100%",
     latitude: 0.0,
     longitude: 0.0,
-    zoom: 1.5,
+    zoom: 2,
   });
 
   return (
