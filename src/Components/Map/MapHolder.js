@@ -7,9 +7,9 @@ const MapHolder = ({ studentData }) => {
   const [viewport, setViewport] = useState({
     width: "95%",
     height: "100%",
-    latitude: 31.9686,
-    longitude: -99.90181,
-    zoom: 5.5,
+    latitude: 0.0,
+    longitude: 0.0,
+    zoom: 1.5,
   });
 
   return (
@@ -32,7 +32,10 @@ const MapHolder = ({ studentData }) => {
                 latitude={locationMarker.latitude}
                 longitude={locationMarker.longitude}
               >
-                <MapMarkerSVG />
+                <img
+                  src="https://res.cloudinary.com/duprwuo4j/image/upload/v1613601534/location_zl0llp.png"
+                  alt="Marker"
+                />
               </Marker>
             );
           })}
