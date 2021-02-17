@@ -13,7 +13,7 @@ const MapHolder = ({ studentData }) => {
   });
 
   return (
-    <div className="map">
+    <div className="Map animated delay-1s fadeInLeft">
       <div className="map__title">
         <h1>Map</h1>
         <br />
