@@ -69,7 +69,7 @@ const STUDENT_INFO = [
     country: "Portugal",
     state: "Autonomous region",
     city: "Portugal",
-    latitude: 338.305542,
+    latitude: 38.305542,
     longitude: 30.384108,
     aboutDescription: `Dallas-based designer with experience in graphic design, UX design, and front-end development. I love great design and learning new ways to delight viewers and communicate the values and messages of my clients. When I’m not tinkering on a design or code, you can find me reading a book, cooking, traveling with my family, or running after my two kids.`,
     linkedin: "https://www.linkedin.com/in/lizdasilva/detail/photo/",
