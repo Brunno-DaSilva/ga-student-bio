@@ -25,7 +25,17 @@ const MapHolder = ({ studentData }) => {
           onViewportChange={(nextViewport) => setViewport(nextViewport)}
           mapStyle="mapbox://styles/bruno-dasilva/ckl5bf4ga46tx18tczxshmi3w"
         >
-          {studentData.MAP}
+          {studentData.map((locationMarker) => {
+            return (
+              <Marker
+                key={locationMarker.id}
+                latitude={locationMarker.latitude}
+                longitude={locationMarker.longitude}
+              >
+                <MapMarkerSVG />
+              </Marker>
+            );
+          })}
         </ReactMapGL>
       </div>
     </div>
