@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
 import "./mapHolder.scss";
 import ReactMapGL, { Marker, Popup } from "react-map-gl";
-import { ReactComponent as MapMarkerSVG } from "./marker.svg";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faMapPin } from "@fortawesome/free-solid-svg-icons";
 
 const MapHolder = ({ studentData }) => {
   const [viewport, setViewport] = useState({
@@ -43,25 +44,20 @@ const MapHolder = ({ studentData }) => {
         >
           {studentData.map((locationMarker) => {
             return (
-              <>
-                <Marker
-                  key={locationMarker.id}
-                  latitude={locationMarker.latitude}
-                  longitude={locationMarker.longitude}
+              <Marker
+                key={locationMarker.id}
+                latitude={locationMarker.latitude}
+                longitude={locationMarker.longitude}
+              >
+                <button
+                  onClick={(e) => {
+                    e.preventDefault();
+                    setSelectedLocation(locationMarker);
+                  }}
                 >
-                  <button
-                    onClick={(e) => {
-                      e.preventDefault();
-                      setSelectedLocation(locationMarker);
-                    }}
-                  >
-                    <img
-                      src="https://res.cloudinary.com/duprwuo4j/image/upload/v1613666240/markericon16x16_zx778w.png"
-                      alt="Marker"
-                    />
-                  </button>
-                </Marker>
-              </>
+                  <FontAwesomeIcon className="icon-map-pin" icon={faMapPin} />
+                </button>
+              </Marker>
             );
           })}
 
@@ -74,12 +70,16 @@ const MapHolder = ({ studentData }) => {
               }}
             >
               <div className="popup__container">
-                <img
-                  src={selectedLocation.imgUrl}
-                  alt={`${selectedLocation.name}'s photo`}
-                />
-                <h2>{selectedLocation.name}</h2>
-                <p>{selectedLocation.title}</p>
+                <div className="popup__container--left">
+                  <img
+                    src={selectedLocation.imgUrl}
+                    alt={`${selectedLocation.name}'s photo`}
+                  />
+                </div>
+                <div className="popup__container--right">
+                  <h2>{selectedLocation.name}</h2>
+                  <p>{selectedLocation.title}</p>
+                </div>
               </div>
             </Popup>
           ) : null}
