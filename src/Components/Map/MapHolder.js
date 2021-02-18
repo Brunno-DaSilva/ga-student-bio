@@ -5,10 +5,10 @@ import { ReactComponent as MapMarkerSVG } from "./marker.svg";
 
 const MapHolder = ({ studentData }) => {
   const [viewport, setViewport] = useState({
-    width: "95%",
+    width: "100%",
     height: "100%",
-    latitude: 0.0,
-    longitude: 0.0,
+    latitude: 37.09024,
+    longitude: -95.712891,
     zoom: 2,
   });
 
@@ -33,7 +33,7 @@ const MapHolder = ({ studentData }) => {
                 longitude={locationMarker.longitude}
               >
                 <img
-                  src="https://res.cloudinary.com/duprwuo4j/image/upload/v1613601534/location_zl0llp.png"
+                  src="https://res.cloudinary.com/duprwuo4j/image/upload/v1613666240/markericon16x16_zx778w.png"
                   alt="Marker"
                 />
               </Marker>
