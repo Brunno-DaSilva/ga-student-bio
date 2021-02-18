@@ -11,7 +11,7 @@ const Home = () => {
         <div className="title__left">
           <div>
             <h3>General Assembly</h3>
-            <h3>Students BIO</h3>
+            <h3>Student BIO</h3>
             <p>
               So students can practice contributing to open source- add your
               BIOS: About information, picture, and social media links.
