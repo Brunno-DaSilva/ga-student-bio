@@ -35,21 +35,26 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 1px solid red;
+    margin-top: 5rem;
 
-    h2 {
-      font-size: 2.5rem;
-      color: #9b9b9b;
+    .about__body_title {
+      h2 {
+        font-size: 3rem;
+        color: #9b9b9b;
+      }
     }
 
-    p {
-      width: clamp(50%, 50rem, 100%);
-      font-size: 1.5rem;
-      color: #4d4d4d;
-      padding: 2rem;
-      line-height: 2rem;
-      letter-spacing: 0.1rem;
-      border: 1px solid red;
+    .about__body_description {
+      width: clamp(50%, 55rem, 100%);
+      margin-top: 3rem;
+
+      p {
+        font-size: 2.5rem;
+        color: #4d4d4d;
+        padding: 2rem;
+        line-height: 3.5rem;
+        letter-spacing: 0.19rem;
+      }
     }
   }
 }

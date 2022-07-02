@@ -9,10 +9,10 @@ const About = () => {
         <h1>About</h1>
       </div>
       <div className="about__body">
-        <div>
+        <div className="about__body_title">
           <h2>Student Bios</h2>
         </div>
-        <div>
+        <div className="about__body_description">
           <p>
             Simple app built with create-react-app, so students can practice
             contributing to open source. Students can then, add their BIOS, as
