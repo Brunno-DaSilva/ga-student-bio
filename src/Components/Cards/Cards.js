@@ -13,7 +13,7 @@ import {
 import "./cards-style.scss";
 
 const Cards = ({ name, title, imgUrl, ...otherSectionProps }) => {
-  const [modalIsOpen, setModalIsOpen] = React.useState(false);
+  const [modalIsOpen, setModalIsOpen] = useState(false);
 
   const modalIsOpenHandler = () => {
     setModalIsOpen((prevState) => !prevState);

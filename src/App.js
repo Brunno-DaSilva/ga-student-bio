@@ -1,10 +1,11 @@
 import React, { Component } from "react";
-import { Switch, Route, Redirect } from "react-router-dom";
+import { Routes, Route, Redirect } from "react-router-dom";
 
 import MapHolder from "./Components/Map/MapHolder";
 import Students from "./Components/Students/Students";
 import About from "./Components/About/About";
 import Home from "./Components/Home/Home";
+import Error from "./Components/Error/Error.jsx";
 
 import Toolbar from "./Components/Toolbar/Toolbar";
 import SideDrawer from "./Components/SideDrawer/SideDrawer";
@@ -47,20 +48,19 @@ class App extends Component {
           <SideDrawer show={this.state.sideDrawerOpen} />
           {backdrop}
 
-          <Switch>
-            <Route exact path="/" component={Home} />
+          <Routes>
+            <Route path="/" element={<Home />} />
             <Route
-              exact
               path="/map"
-              render={() => <MapHolder studentData={studentData} />}
+              element={<MapHolder studentData={studentData} />}
             />
             <Route
-              exact
               path="/students"
-              render={() => <Students studentData={studentData} />}
+              element={<Students studentData={studentData} />}
             />
-            <Route exact path="/about" component={About} />
-          </Switch>
+            <Route path="/about" element={<About />} />
+            <Route path="*" element={<Error />} />
+          </Routes>
         </div>
         <Footer />
       </>

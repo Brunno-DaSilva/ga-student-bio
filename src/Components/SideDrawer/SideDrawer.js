@@ -18,10 +18,10 @@ const SideDrawer = (props) => {
             <img src="https://res.cloudinary.com/duprwuo4j/image/upload/v1588899368/Logo/blogo-gray_doyoy3.png" />
           </Link>
         </div>
-        <Link>Home</Link>
-        <Link>Map</Link>
-        <Link>Students</Link>
-        <Link>About</Link>
+        <Link to="/">Home</Link>
+        <Link to="map">Map</Link>
+        <Link to="students">Students</Link>
+        <Link to="about">About</Link>
       </div>
     </nav>
   );

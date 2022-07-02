@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 import SideDrawerButton from "../SideDrawer/SideDrawerButton";
 
 import { ReactComponent as TopRight } from "../../images/topright.svg";
@@ -39,6 +39,7 @@ const Toolbar = (props) => {
           </div>
         </nav>
       </header>
+      <Outlet />
     </>
   );
 };
