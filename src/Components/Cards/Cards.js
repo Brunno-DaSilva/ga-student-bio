@@ -41,7 +41,10 @@ const Cards = ({ name, title, imgUrl, ...otherSectionProps }) => {
               </button>
             </div>
           </div>
-          <div className="image animated delay-4s fadeInUp">
+          <div
+            onClick={modalIsOpenHandler}
+            className="image animated delay-4s fadeInUp"
+          >
             <img src={imgUrl} alt={title} />
           </div>
         </div>
